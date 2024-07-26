@@ -1,0 +1,36 @@
+### Listar todas as tarefas
+GET http://localhost:8080/task
+Accept: application/json
+
+###
+
+### Criar uma nova tarefa
+POST http://localhost:8080/task
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Nova Tarefa",
+  "description": "Descrição da nova tarefa"
+}
+
+###
+
+### Atualizar uma tarefa existente
+PUT http://localhost:8080/task/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Tarefa Atualizada denovo novo novo",
+  "description": "Descrição atualizada",
+  "status": "completed"
+}
+
+###
+
+### Deletar uma tarefa
+DELETE http://localhost:8080/task/5
+Accept: application/json
+
+###
